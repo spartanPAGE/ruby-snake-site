@@ -1,0 +1,31 @@
+.article_form {
+  width: 960px;
+}
+
+.article form {
+  position: static;
+}
+
+.article_form form p textarea {
+  overflow: scroll;
+  position:relative;
+  box-sizing: border-box;
+  width: 90vw;
+  max-width: calc(960px - 30px);
+}
+
+hr {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 8px auto;
+  height: 0;
+  width: 100%;
+  max-height: 0;
+  font-size: 1px;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #ffffff;
+}

@@ -1,0 +1,11 @@
+<% content_for :title do %>Articles<% end %>
+<h3>Articles index</h3>
+<% @articles.each do |article| %>
+  <hr>
+  <%= render article %>
+  <%#= link_to 'Show', article_path(article) %>
+  <%= render partial: 'edit_link', locals: {article: article} %>
+<% end %>
+<% if @articles.empty? %>
+  <p>Sorry, but there are no articles <strong>yet</strong>.</p>
+<% end %>

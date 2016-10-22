@@ -1,0 +1,7 @@
+<% content_for :title do %>
+  Article: <%= @article.title %>
+<% end %>
+
+<%= render @article %>
+<%= render partial: 'edit_link', locals: {article: @article} %>
+<%= link_to 'Back', articles_path %>
